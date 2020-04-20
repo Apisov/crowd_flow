@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:clipToPadding="false"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/tfe_color_primary_dark"
+                android:enabled="false"
+                android:text="MELODY"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PITCH"
+                android:textColor="@android:color/white"
+                android:textSize="16pt" />
+
+            <SeekBar
+                android:id="@+id/pitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:max="127"
+                android:progress="64" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SPEED"
+                android:textColor="@android:color/white"
+                android:textSize="16pt" />
+
+            <SeekBar
+                android:id="@+id/speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:max="127"
+                android:progress="64" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DARK"
+                android:textColor="@android:color/white"
+                android:textSize="16pt" />
+
+            <SeekBar
+                android:id="@+id/dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:max="127"
+                android:progress="64" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DECAY"
+                android:textColor="@android:color/white"
+                android:textSize="16pt" />
+
+            <SeekBar
+                android:id="@+id/decay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:max="127"
+                android:progress="64" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VOLUME"
+                android:textColor="@android:color/white"
+                android:textSize="16pt" />
+
+            <SeekBar
+                android:id="@+id/mld_volume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:max="127"
+                android:progress="64" />
+
+            <Button
+                android:id="@+id/btn_next_chord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/tfe_color_primary_dark"
+                android:text="NEXT CHORD >"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VOLUME"
+                android:textColor="@android:color/white"
+                android:textSize="16pt" />
+
+            <SeekBar
+                android:id="@+id/chord_volume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:max="127"
+                android:progress="64" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ATTACK"
+                android:textColor="@android:color/white"
+                android:textSize="16pt" />
+
+            <SeekBar
+                android:id="@+id/attack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:max="127"
+                android:progress="64" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
